@@ -17,7 +17,7 @@ reverse <- function(string){
     s1 <- strsplit(s[i], "")[[1]] %>% rev() %>% paste(collapse = "")
     result[i] <- s1
   }
-  result
+  paste(result,collapse = " ")
 }
 
 reverse("flipped class room is important")
@@ -40,4 +40,5 @@ count <- function(number){
   result
 }
 
+count(15)
 
